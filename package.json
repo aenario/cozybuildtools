@@ -1,0 +1,35 @@
+{
+  "name": "cozybuildtools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "coffee --bare --output lib --compile src",
+    "test": "mocha tests --reporter spec --compilers coffee:coffee-script/register --colors"
+  },
+  "bin": {
+    "cozybuild": "bin/cozybuildtools"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aenario/cozybuildtools"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aenario/cozybuildtools/issues"
+  },
+  "homepage": "https://github.com/aenario/cozybuildtools",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "glob": "4.3.5",
+    "mocha": "2.1.0",
+    "coffeelint": "1.8.1",
+    "coffee-script": "1.8.0",
+    "coffee-jshint": "0.2.2",
+    "brunch": "1.7.20",
+    "commander": "2.6.0",
+    "browserify": "8.1.1"
+  }
+}
